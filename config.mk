@@ -5,8 +5,7 @@ $(call inherit-product, packages/apps/MotoDolbyV3/motodolbyv3.mk)
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio_fx.current=dolby \
-    vendor.audio.dolby.ds2.enabled=true \
-    vendor.audio.dolby.ds2.hardbypass=true
+    ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1=true
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += \
