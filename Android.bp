@@ -1,0 +1,32 @@
+// Automatically generated file. DO NOT MODIFY
+
+soong_namespace {
+}
+
+android_app_import {
+	name: "MotoDolbyV3",
+	owner: "motorola",
+	apk: "proprietary/system/app/MotoDolbyV3/MotoDolbyV3.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	required: [
+        "MotoSignatureApp",
+        "daxService",
+        ],
+	overrides: ["AudioFX", "MusicFX"],
+}
+
+android_app_import {
+	name: "daxService",
+	owner: "motorola",
+	apk: "proprietary/product/priv-app/daxService/daxService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+	privileged: true,
+}
+
